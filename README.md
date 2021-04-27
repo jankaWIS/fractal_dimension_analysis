@@ -15,15 +15,18 @@ Second of all, in biology for image processing, FiJi/ImageJ is used a lot (ref) 
 
 Besides all of this, this tool also controls for other problems (tbh I think that some are negligible like the starting grid position which they sample), eg see [this link](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/BoxCountingOptions.htm). 
 
-## Reference
-For more reference as requested, see this paper:
-https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-2-130
-or this article
+## References and literature
+1) Nest expansion assay: a cancer systems biology approach to in vitro invasion measurements (Kam, Y., Karperien, A., Weidow, B. et al. BMC Res Notes 2, 130 (2009). https://doi.org/10.1186/1756-0500-2-130), pdf accessible at https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-2-130.
+
+2) Fractal analysis in practice, article on ImageJ:
 https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Fractals.htm#fractalanalysisinpractice
-or what has been mentioned in the related issue by @SalvatoreScaramuzzino :
+
+3) Fractal Dimension Estimation Methods for Biomedical Images (Antonio Napolitano, Sara Ungania and Vittorio Cannata, http://dx.doi.org/10.5772/48760, mentioned in [this issue](https://github.com/scikit-image/scikit-image/issues/1730) by @SalvatoreScaramuzzino):
 http://cdn.intechopen.com/pdfs-wm/39360.pdf
 
 
+#### Differential box counting
+1) An efficient differential box-counting approach to compute fractal dimension of image (N. Sarker, B. B. Chaudhuri, DOI: 10.1109/21.259692)
 
 
 ## Related issues
