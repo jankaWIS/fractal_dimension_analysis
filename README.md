@@ -21,8 +21,7 @@ Besides all of this, this tool also controls for other problems (tbh I think tha
 2) Fractal analysis in practice, article on ImageJ:
 https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Fractals.htm#fractalanalysisinpractice
 
-3) Fractal Dimension Estimation Methods for Biomedical Images (Antonio Napolitano, Sara Ungania and Vittorio Cannata, http://dx.doi.org/10.5772/48760, mentioned in [this issue](https://github.com/scikit-image/scikit-image/issues/1730) by @SalvatoreScaramuzzino):
-http://cdn.intechopen.com/pdfs-wm/39360.pdf
+3) Fractal Dimension Estimation Methods for Biomedical Images (Antonio Napolitano, Sara Ungania and Vittorio Cannata, http://dx.doi.org/10.5772/48760, mentioned in [this issue](https://github.com/scikit-image/scikit-image/issues/1730) by @SalvatoreScaramuzzino), pdf accessible at http://cdn.intechopen.com/pdfs-wm/39360.pdf.
 
 
 #### Differential box counting
