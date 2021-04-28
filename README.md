@@ -6,11 +6,14 @@ Implement fractal dimension analysis for grayscale images, micsrocopy images and
 
 First of all, there has been [this extension to 3D](https://github.com/ChatzigeorgiouGroup/FractalDimension) together with some applications on cytoskeleton complexity. 
 
-Second of all, in biology for image processing, FiJi/ImageJ is used a lot (ref) for estimating the fractal dimension of a grayscale image (or for analysis of signal coming from microscopy). The relevant documentation is on those pages: [introduction (link to source code)](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Introduction.htm), [box counting](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/BoxCounting.htm) but more importantly, this [glossary](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Glossary.htm#grayscale) which defines three measures for grayscale images (notice that this Is basically looking at 3D) 
+Second of all, in biology for image processing, FiJi/ImageJ is used a lot (ref) for estimating the fractal dimension of a grayscale image (or for analysis of signal coming from microscopy). The relevant documentation is on those pages: [introduction (link to source code)](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Introduction.htm) or [pdf summary with links](https://www.researchgate.net/profile/Audrey-Karperien/publication/258341589_FracLac_for_ImageJ/links/0c9605285e41abf78f000000/FracLac-for-ImageJ.pdf), [box counting](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/BoxCounting.htm) but more importantly, this [glossary](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Glossary.htm#grayscale) which defines three measures for grayscale images (notice that this Is basically looking at 3D) 
 
 > FracLac reports 3 basic types of fractal dimension for grayscale scans. 
+> 
 > DB
+> 
 > DM
+> 
 > Dx̄
 
 Besides all of this, this tool also controls for other problems (tbh I think that some are negligible like the starting grid position which they sample), eg see [this link](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/BoxCountingOptions.htm). 
@@ -25,7 +28,11 @@ https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Fractals.htm#fractalanalysisinp
 
 4) Fractal Geometry in Image Processing (A. Annadhason, accessible online at https://www.yumpu.com/en/document/view/32997338/fractal-geometry-in-image-processing).
 
-5) Fractal analysis in radiological and nuclear medicine perfusion imaging: a systematic review (Michallek, F., Dewey, M., Eur Radiol 24, 60–69 (2014). https://doi.org/10.1007/s00330-013-2977-9 , accessible at https://link.springer.com/content/pdf/10.1007/s00330-013-2977-9.pdf)
+5) Fractal analysis in radiological and nuclear medicine perfusion imaging: a systematic review (Michallek, F., Dewey, M., Eur Radiol 24, 60–69 (2014). https://doi.org/10.1007/s00330-013-2977-9 , accessible at https://link.springer.com/content/pdf/10.1007/s00330-013-2977-9.pdf).
+
+
+(Another) Dynamics of Forest Fragmentation and Connectivity Using Particle and Fractal Analysis (Andronache, I., Marin, M., Fischer, R. et al., Sci Rep 9, 12228 (2019). https://doi.org/10.1038/s41598-019-48277-z, pdf accessible at https://www.nature.com/articles/s41598-019-48277-z.pdf).
+
 
 #### Differential box counting
 1) An efficient differential box-counting approach to compute fractal dimension of image (N. Sarker, B. B. Chaudhuri, DOI: 10.1109/21.259692)
