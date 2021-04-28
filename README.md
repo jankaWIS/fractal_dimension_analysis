@@ -18,6 +18,10 @@ Second of all, in biology for image processing, FiJi/ImageJ is used a lot (ref) 
 
 Besides all of this, this tool also controls for other problems (tbh I think that some are negligible like the starting grid position which they sample), eg see [this link](https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/BoxCountingOptions.htm). 
 
+#### Source code ImageJ 
+* Fractal dimension, Fractal count: [Github repo](https://github.com/perchrh/ImageJFractalDimension), [Github-fractal count](https://github.com/perchrh/ImageJFractalDimension/blob/master/FractalCount_.java), [summary page for imageJ pugins](http://www.pvv.org/~perchrh/imagej/fractal.html).
+* 
+
 ## References and literature
 1) Nest expansion assay: a cancer systems biology approach to in vitro invasion measurements (Kam, Y., Karperien, A., Weidow, B. et al. BMC Res Notes 2, 130 (2009). https://doi.org/10.1186/1756-0500-2-130), pdf accessible at https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-2-130.
 
@@ -29,6 +33,9 @@ https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Fractals.htm#fractalanalysisinp
 4) Fractal Geometry in Image Processing (A. Annadhason, accessible online at https://www.yumpu.com/en/document/view/32997338/fractal-geometry-in-image-processing).
 
 5) Fractal analysis in radiological and nuclear medicine perfusion imaging: a systematic review (Michallek, F., Dewey, M., Eur Radiol 24, 60–69 (2014). https://doi.org/10.1007/s00330-013-2977-9 , accessible at https://link.springer.com/content/pdf/10.1007/s00330-013-2977-9.pdf).
+
+6) MULTIFRAC: An ImageJ plugin for multiscale characterization of 2D and 3D stack images (Iván .G.Torreab, Richard J.Heckc, A.M.Tarquisdef, SoftwareX
+Volume 12, July–December 2020, 100574, https://doi.org/10.1016/j.softx.2020.100574, pdf accessible at https://reader.elsevier.com/reader/sd/pii/S2352711020302879?token=13BA7120C8771C204919EE98C9D9F7D45100EACF82804A60E139E10499A15BD0D083862DE89818D7D5C8440B23BCB850&originRegion=eu-west-1&originCreation=20210428074543).
 
 
 (Another) Dynamics of Forest Fragmentation and Connectivity Using Particle and Fractal Analysis (Andronache, I., Marin, M., Fischer, R. et al., Sci Rep 9, 12228 (2019). https://doi.org/10.1038/s41598-019-48277-z, pdf accessible at https://www.nature.com/articles/s41598-019-48277-z.pdf).
