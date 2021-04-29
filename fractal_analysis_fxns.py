@@ -13,6 +13,7 @@
 
 import numpy as np
 
+
 def boxcount(Z, k):
     """
     returns a count of squares of size kxk in which there are both colours (black and white), ie. the sum of numbers
@@ -31,7 +32,7 @@ def boxcount(Z, k):
 def boxcount_grayscale(Z, k):
     """
     find min and max intensity in the box and return their difference
-    Z - np.array, array to find difference in intesnities in
+    Z - np.array, array to find difference in intensities in
     k - int, size of a box
     """
     S_min = np.fmin.reduceat(
@@ -121,3 +122,55 @@ def fractal_dimension_grayscale(Z):
     coeffs_dm = np.polyfit(np.log(sizes), np.log(d_m), 1)
 
     return -coeffs_db[0], -coeffs_dm[0]
+
+
+def fractal_dimension_grayscale_DBC(Z):
+    """
+    Differential box counting method with implementation of appropriate box height selection.
+    :param Z: 2D np.array
+    :return: fd for a grayscale image
+    """
+    # Only for 2d image
+    assert (len(Z.shape) == 2)
+
+    # Minimal dimension of image
+    p = min(Z.shape)
+
+    # Greatest power of 2 less than or equal to p
+    n = 2 ** np.floor(np.log(p) / np.log(2))
+
+    # Extract the exponent
+    n = int(np.log(n) / np.log(2))
+
+    # Build successive box sizes (from 2**n down to 2**1)
+    sizes = 2 ** np.arange(n, 1, -1)
+
+    # get the mean and standard deviation of the image intensity to rescale r
+    mu = np.mean(Z)
+    sigma = np.std(Z)
+
+    # total number of gray levels, used for computing s'
+    G = len(np.unique(Z))
+
+    # scaled scale of each block, r=size(s)
+    # TODO -- when to rescale, what should a be
+    # when to rescale -- either always or when the pixels in the selected box don't fall in +- 1 std, so far always
+    a = 1
+    r_prime = sizes / (1 + 2 * a * sigma)
+
+    # Actual box counting with decreasing size
+    i_difference = []
+    for size in sizes:
+        # rescale
+        n_r = np.ceil(boxcount_grayscale(Z, size) / r_prime)
+        # if max==min per the box, replace the 0 result with 1
+        n_r[n_r == 0] = 1
+        i_difference.append(n_r)
+
+    # contribution from all boxes
+    N_r = [np.sum(x) for x in i_difference]
+
+    # Fit the successive log(sizes) with log (sum)
+    coeffs = np.polyfit(np.log(sizes), np.log(N_r), 1)
+
+    return -coeffs[0]
