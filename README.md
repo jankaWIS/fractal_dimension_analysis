@@ -40,6 +40,8 @@ https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Fractals.htm#fractalanalysisinp
 6) MULTIFRAC: An ImageJ plugin for multiscale characterization of 2D and 3D stack images (Iván .G.Torreab, Richard J.Heckc, A.M.Tarquisdef, SoftwareX
 Volume 12, July–December 2020, 100574, https://doi.org/10.1016/j.softx.2020.100574, pdf accessible at https://reader.elsevier.com/reader/sd/pii/S2352711020302879?token=13BA7120C8771C204919EE98C9D9F7D45100EACF82804A60E139E10499A15BD0D083862DE89818D7D5C8440B23BCB850&originRegion=eu-west-1&originCreation=20210428074543).
 
+7) Konatar, I., Popovic, T., & Popovic, N. (2020). Box-Counting Method in Python for Fractal Analysis of Biomedical Images. 2020 24th International Conference on Information Technology (IT). doi:10.1109/it48810.2020.90704, https://ieeexplore.ieee.org/document/9070454
+
 (Another) Dynamics of Forest Fragmentation and Connectivity Using Particle and Fractal Analysis (Andronache, I., Marin, M., Fischer, R. et al., Sci Rep 9, 12228 (2019). https://doi.org/10.1038/s41598-019-48277-z, pdf accessible at https://www.nature.com/articles/s41598-019-48277-z.pdf).
 
 
